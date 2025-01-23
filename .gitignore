@@ -6,6 +6,5 @@
 **/.ssh/*_id_*
 **/.ssh/known_hosts
 
-terra-key
-terra-key.pub
+**/.ssh
 # End of https://www.toptal.com/developers/gitignore/api/ssh
