@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
   ami                    = var.amiIDs[var.REGION]
   instance_type          = "t3.micro"
-  key_name               = "terra-key-2"
+  key_name               = "test-key"
   vpc_security_group_ids = [aws_security_group.terra-sg.id]
   availability_zone      = var.ZONE1
 
@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   connection {
     type        = "ssh"
     user        = var.webUSER
-    private_key = file("terra-key")
+    private_key = file("test-key")
     host        = self.public_ip
   }
 

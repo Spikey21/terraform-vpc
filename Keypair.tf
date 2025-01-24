@@ -1,4 +1,4 @@
-resource "aws_key_pair" "terrakey" {
-  key_name   = "terra-key-2"
-  public_key = file(".ssh/terra-key.pub")
+resource "aws_key_pair" "test-key" {
+  key_name   = "test-key"
+  public_key = file("test-key.pub")
 }
